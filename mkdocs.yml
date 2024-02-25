@@ -6,12 +6,12 @@ repo_name: blog
 repo_url: https://github.com/jxnl/blog/
 site_url: https://jxnl.github.io/blog/
 edit_uri: edit/main/docs/
-copyright: Copyright &copy; 2024 Jason Liu
+copyright: Copyright &copy; 2024 Jason Liu 
 theme:
   name: material
   icon:
     repo: fontawesome/brands/github
-    edit: material/pencil
+    edit: material/pencil 
     view: material/eye
     theme:
     admonition:
@@ -54,8 +54,8 @@ theme:
     - search.suggest
     - toc.follow
   palette:
-      - scheme: default
-        primary: black
+      - scheme: default 
+        primary: black 
         accent: indigo
         toggle:
           icon: material/brightness-7
@@ -98,7 +98,7 @@ markdown_extensions:
   - pymdownx.magiclink:
       normalize_issue_symbols: true
       repo_url_shorthand: true
-      user: jxnl
+      user: jxnl 
       repo: instructor
   - pymdownx.mark
   - pymdownx.smartsymbols
@@ -122,7 +122,7 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
 nav:
-  - Home:
+  - Home: 
     - Introductions: 'index.md'
     - Books: 'books.md'
   - Writing:
@@ -131,7 +131,7 @@ nav:
     - Working with me: "hiring.md"
     - Sample Proposal: "assessment.md"
   - Contact: 'contact.md'
-
+  
 plugins:
   - social
   - search:
@@ -154,12 +154,12 @@ plugins:
       post_url_format: "{date}/{slug}"
       authors_file: "{blog}/.authors.yml"
   - rss:
-      match_path: writing/posts/.*
+      match_path: writing/posts/.* 
       date_from_meta:
         as_creation: date
       categories:
         - categories
-        - tags
+        - tags 
       enabled: !ENV [CI, false]
 extra:
   analytics:
