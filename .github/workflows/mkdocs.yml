@@ -3,7 +3,7 @@ name: Deploy MkDocs
 on:
   push:
     branches:
-      - main
+      - master
 
 permissions:
   contents: write
@@ -44,4 +44,4 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Build and deploy MkDocs
-        run: mkdocs gh-deploy --force
+        run: mkdocs gh-deploy --force --verbose
