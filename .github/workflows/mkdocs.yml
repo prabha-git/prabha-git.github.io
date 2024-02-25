@@ -31,4 +31,4 @@ jobs:
           mkdocs build --verbose  # Build the site.
           mkdocs gh-deploy --force --verbose  # Deploy the site to the gh-pages branch.
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use the provided GITHUB_TOKEN for authentication.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
