@@ -1,9 +1,9 @@
-name: Deploy MkDocs
+name: Deploy MkDocs Site
 
 on:
   push:
     branches:
-      - master
+      - master  # Change this to your default branch if it's not master.
 
 permissions:
   contents: write
@@ -19,29 +19,16 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
-
-      - name: Calculate requirements hash
-        id: req-hash
-        run: echo "::set-output name=hash::$(sha256sum requirements-doc.txt | awk '{print $1}')"
-
-      - name: Setup cache
-        uses: actions/cache@v3
-        with:
-          key: mkdocs-material-${{ steps.req-hash.outputs.hash }}
-          path: .cache
-          restore-keys: |
-            mkdocs-material-
-
+          python-version: '3.10'  # Ensure this matches the Python version you use locally.
 
       - name: Install Requirements
         run: |
-          sudo apt-get update &&
-          sudo apt-get install pngquant &&
-          pip install -r requirements-doc.txt
-
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          python -m pip install --upgrade pip
+          pip install -r requirements-doc.txt  # This file should list mkdocs and any other packages.
 
       - name: Build and deploy MkDocs
-        run: mkdocs gh-deploy --force --verbose
+        run: |
+          mkdocs build --verbose  # Build the site.
+          mkdocs gh-deploy --force --verbose  # Deploy the site to the gh-pages branch.
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use the provided GITHUB_TOKEN for authentication.
