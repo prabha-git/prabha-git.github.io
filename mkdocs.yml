@@ -6,9 +6,11 @@ repo_name: blog
 repo_url: https://github.com/prabha-git.github.io/
 site_url: https://prabha.github.io/
 edit_uri: edit/main/docs/
-copyright: Copyright &copy; 2024 Jason Liu 
+copyright: Copyright &copy; 2024 Prabha Arivalagan
 theme:
   name: material
+  logo: logo.png
+  favicon: logo.png
   icon:
     repo: fontawesome/brands/github
     edit: material/pencil 
@@ -38,7 +40,6 @@ theme:
     - content.tooltips
     - header.autohide
     - navigation.expand
-    - navigation.footer
     - navigation.indexes
     - navigation.instant
     - navigation.instant.prefetch
@@ -55,7 +56,7 @@ theme:
     - toc.follow
   palette:
       - scheme: default 
-        primary: black 
+        primary: white
         accent: indigo
         toggle:
           icon: material/brightness-7
@@ -127,9 +128,6 @@ nav:
     - Books: 'books.md'
   - Writing:
     - "writing/index.md"
-  - Hiring:
-    - Working with me: "hiring.md"
-    - Sample Proposal: "assessment.md"
   - Contact: 'contact.md'
   
 plugins:
@@ -164,7 +162,7 @@ plugins:
 extra:
   analytics:
     provider: google
-    property: G-686PKP2V2V
+    property: G-F48ZZ8Q1KB
     feedback:
       title: Was this page helpful?
       ratings:
@@ -181,9 +179,9 @@ extra:
             using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
   social:
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/jxnlco
+      link: https://twitter.com/prabhatweet
     - icon: fontawesome/brands/github
-      link: https://github.com/jxnl
+      link: https://github.com/prabha-git
 extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
