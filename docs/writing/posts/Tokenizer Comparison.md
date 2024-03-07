@@ -5,7 +5,7 @@ slug: tokenizer-comparison
 tags:
   - llm
 authors:
-  - prabha
+  - Prabha
 ---
 
 Very good resource [Karpathy's Tokenizer Video](https://www.youtube.com/watch?v=zduSFxRajkE&t=3618s)
