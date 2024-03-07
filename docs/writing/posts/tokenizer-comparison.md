@@ -7,6 +7,8 @@ tags:
 authors:
   - Prabha
 ---
+!!!note "Self Note"
+	This note is for myself to understand the concepts
 
 Very good resource [Karpathy's Tokenizer Video](https://www.youtube.com/watch?v=zduSFxRajkE&t=3618s)
 
