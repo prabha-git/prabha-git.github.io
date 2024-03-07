@@ -4,7 +4,7 @@ date: 2023-11-02
 categories:
   - Personal
 authors:
-  - jxnl
+  - prabha
 ---
 
 # AI Engineer Keynote: Pydantic is all you need
