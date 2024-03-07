@@ -26,9 +26,18 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements-doc.txt  # This file should list mkdocs and any other packages.
 
-      - name: Build and deploy MkDocs
+      - name: Build the MkDocs Site
         run: |
           mkdocs build --verbose  # Build the site.
+
+      - name: Create CNAME File
+        run: echo "prabha.ai" > site/CNAME
+        # Replace "yourcustomdomain.com" with your actual custom domain.
+        # The 'site' directory is the default build directory for MkDocs.
+        # If you have configured a different directory, adjust the path accordingly.
+
+      - name: Deploy to GitHub Pages
+        run: |
           mkdocs gh-deploy --force --verbose  # Deploy the site to the gh-pages branch.
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
