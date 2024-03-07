@@ -14,7 +14,7 @@ It is always clear that LLMs use different tokenizer , i want to test it.
 
 I have downloaded from [gutenberg.org/cache/epub/100/pg100.txt](https://www.gutenberg.org/cache/epub/100/pg100.txt)
 
-
+comparison of 
 [My Colab Notebook](https://colab.research.google.com/drive/1jYl4aW65Ko1e8QBca2b5hJvxrASJ-dHf#scrollTo=pOHNGlhTv3Zy)
 
 
