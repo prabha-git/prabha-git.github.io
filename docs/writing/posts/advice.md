@@ -5,7 +5,7 @@ slug: advice-to-young-people
 categories:
   - Personal
 authors:
-  - prabha
+  - Prabha
 ---
 
 # Advice to Young People, The Lies I Tell Myself
