@@ -18,5 +18,4 @@ comparison of
 [My Colab Notebook](https://colab.research.google.com/drive/1jYl4aW65Ko1e8QBca2b5hJvxrASJ-dHf#scrollTo=pOHNGlhTv3Zy)
 
 
-
-![[Pasted image 20240306162048.png]]
+![[docs/images/Pasted image 20240306162048.png]]
