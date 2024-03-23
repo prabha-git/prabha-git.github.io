@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 date: 2024-03-23
 slug: advanced-rag-notes
 tags:
