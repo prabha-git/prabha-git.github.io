@@ -12,7 +12,7 @@ authors:
 !!!note "Self Note"
 	This note is for me to understand the concepts
 	
-[Advanced Retrieval-Augmented Generation: From Theory to LlamaIndex Implementation | by Leonie Monigatti | Feb, 2024 | Towards Data Science](https://towardsdatascience.com/advanced-retrieval-augmented-generation-from-theory-to-llamaindex-implementation-4de1464a9930)
+## [Advanced Retrieval-Augmented Generation: From Theory to LlamaIndex Implementation | by Leonie Monigatti | Feb, 2024 | Towards Data Science](https://towardsdatascience.com/advanced-retrieval-augmented-generation-from-theory-to-llamaindex-implementation-4de1464a9930)
 
 ### Summary
 Advanced techniques can be categorized into `Pre-Retrieval`, `Retrieval`, `Post-Retrieval`
@@ -39,4 +39,11 @@ Advanced techniques can be categorized into `Pre-Retrieval`, `Retrieval`, `Post-
 	- Helps stay within context limits & reduces noise
 		- Few techniques are 
 			- Prompt Compression - removes irrelevant and highlights important info
-			- Re-ranking 
+			- Re-ranking - using machine learning model to recalculate relevance score
+
+
+### \[Exercise\] Implementing Advanced RAG using LlamaIndex
+
+[Colab link for exercise](https://colab.research.google.com/drive/1_zoaHmFLaBc8FXxEGlHsgCs4blTtFNuD?usp=sharing)
+
+
