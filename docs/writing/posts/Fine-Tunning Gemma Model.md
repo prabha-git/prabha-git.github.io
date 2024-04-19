@@ -119,8 +119,36 @@ What is the biggest city in USA?\n\nWhat is the capital of USA?\n\nWhat is the l
 
 ### LoRA Fine-tuning
 
+[Google Colab](https://colab.research.google.com/drive/1msMLKjOv5ZyXoloHqUuESNztrdQ1cE7u#scrollTo=g_eZd0vII2yM)
+
 We used [Databricks Dolly 15k dataset for finetuning](https://www.kaggle.com/datasets/databricks/databricks-dolly-15k)
 
 - LoRA rank determines the dimensionality of trainable matrices that are added to the original weights of LLM.
 - A higher rank means more detailed changes with more trainable parameters. Lower rank means less computational overhead with less precise adaptation.
 - In practice start with a small rank such as 4.
+
+
+Inference after rank=4 fine-tuning
+
+```python
+>>gemma_lm.backbone.enable_lora(rank=4)
+>>.....
+>>gemma_lm.generate("What is the biggest city in USA?", max_length=60)
+What is the biggest city in USA? This question has been the subject of much debate. Some people say that New York City is the biggest city in US while others say that Los Angeles is the biggest city in the US.
+
+There are many factors that go into determining which city is the biggest
+```
+
+
+```python
+gemma_lm.backbone.enable_lora(rank=5)
+>>.....
+>>gemma_lm.generate("What is the biggest city in USA?", max_length=60)
+What is the biggest city in USA?
+
+The largest city in the United States is New York City, with a population of 8,509,700 as per the 2020 census.
+
+How do you find the biggest city of USA?
+
+How do
+```
