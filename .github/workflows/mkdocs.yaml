@@ -1,0 +1,43 @@
+name: Deploy MkDocs Site
+
+on:
+  push:
+    branches:
+      - master  # Change this to your default branch if it's not master.
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'  # Ensure this matches the Python version you use locally.
+
+      - name: Install Requirements
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-doc.txt  # This file should list mkdocs and any other packages.
+
+      - name: Build the MkDocs Site
+        run: |
+          mkdocs build --verbose  # Build the site.
+
+      - name: Create CNAME File
+        run: echo "prabha.ai" > site/CNAME
+        # Replace "yourcustomdomain.com" with your actual custom domain.
+        # The 'site' directory is the default build directory for MkDocs.
+        # If you have configured a different directory, adjust the path accordingly.
+
+      - name: Deploy to GitHub Pages
+        run: |
+          mkdocs gh-deploy --force --verbose  # Deploy the site to the gh-pages branch.
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
