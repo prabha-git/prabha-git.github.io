@@ -1,3 +1,12 @@
+---
+draft: true
+date: 2024-03-06
+slug: quantization-notes
+tags:
+  - llm
+authors:
+  - Prabha
+---
 
 - LLM model is getting bigger, quantization helps reduce model size with little to no quality degradation
 - ![[Pasted image 20240415112817.png]]
