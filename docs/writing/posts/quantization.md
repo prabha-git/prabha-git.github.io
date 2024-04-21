@@ -8,6 +8,7 @@ authors:
   - Prabha
 ---
 
+- [Course Link](https://learn.deeplearning.ai/courses/quantization-fundamentals)
 - LLM model is getting bigger, quantization helps reduce model size with little to no quality degradation
 - ![[Pasted image 20240415112817.png]]
 

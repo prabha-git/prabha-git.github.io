@@ -53,7 +53,12 @@ To assess the impact of quantization on accuracy, I ran the output of both model
 
 In conclusion, quantization is a powerful technique for reducing the memory footprint and improving the efficiency of LLMs while maintaining their performance. By enabling the deployment of LLMs on a wider range of devices and applications, quantization plays a crucial role in making these impressive models more accessible and practical for real-world use cases.
 
+!!!note "Note"
+	_Inference time and Accuracy are measured for 100 random question, you can find them in the [colab notebook](https://colab.research.google.com/drive/1eR3h_aV1CXUdG9Yzl29o3VR9Yr6J65JG?usp=sharing)_
 
-_Note: Inference time and Accuracy are measured for 100 random question, you can find them in the [colab notebook](https://colab.research.google.com/drive/1eR3h_aV1CXUdG9Yzl29o3VR9Yr6J65JG?usp=sharing)_
+!!!info
+Good Resource on this topic
+[DLAI - Quantization Fundamentals](https://learn.deeplearning.ai/courses/quantization-fundamentals)
+
 
  If you have any feedback or simply want to connect, please hit me up on [LinkedIn](https://www.linkedin.com/in/prabha-arivalagan/) or [@prabha-tweet](https://twitter.com/prabhatweet)
