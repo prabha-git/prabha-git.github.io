@@ -43,7 +43,7 @@ The table below compares the performance of Google’s 2B Gemma model with 32-bi
 | Memory Size based on # Parameters | > 2.5B * 4 Bytes<br>9.33 GB              | > 2.5B * 2 Bytes<br>4.66 GB              |
 | Memory Footprint                  | 9.39 GB                                  | 4.73 GB                                  |
 | Average Inference time            | 10.36 seconds                            | 7.48 seconds                             |
-| Distribution of Inference Time    | ![[img/Pasted image 20240420104243.png]] | ![[img/Pasted image 20240420104320.png]] |
+| Distribution of Inference Time    | ![](img/Pasted image 20240420104243.png) | ![](img/Pasted image 20240420104320.png) |
 
 
 
