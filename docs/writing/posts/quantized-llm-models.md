@@ -56,9 +56,8 @@ In conclusion, quantization is a powerful technique for reducing the memory foot
 !!!note "Note"
 	_Inference time and Accuracy are measured for 100 random question, you can find them in the [colab notebook](https://colab.research.google.com/drive/1eR3h_aV1CXUdG9Yzl29o3VR9Yr6J65JG?usp=sharing)_
 
-!!!info
-Good Resource on this topic
-[DLAI - Quantization Fundamentals](https://learn.deeplearning.ai/courses/quantization-fundamentals)
+!!!info "Good Resource on this topic"
+	[DLAI - Quantization Fundamentals](https://learn.deeplearning.ai/courses/quantization-fundamentals)
 
 
  If you have any feedback or simply want to connect, please hit me up on [LinkedIn](https://www.linkedin.com/in/prabha-arivalagan/) or [@prabha-tweet](https://twitter.com/prabhatweet)

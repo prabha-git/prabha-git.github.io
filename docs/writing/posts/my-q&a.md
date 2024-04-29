@@ -11,7 +11,7 @@ authors:
 	This note is for me to understand the concepts
 # MY Q&A
 
-## Why is the fine-tuned LLM Model is faster?
+### Why is the fine-tuned LLM Model is faster?
 
 
 
