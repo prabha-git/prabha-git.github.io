@@ -8,9 +8,9 @@ tags:
 authors:
   - Prabha
 ---
-# Building an Obsidian Knowledgebase Chatbot: A Journey of Iteration and Learning
+# Building an Obsidian Knowledge base Chatbot: A Journey of Iteration and Learning
 
-As an avid Obsidian user, I've always been fascinated by the potential of leveraging my daily notes as a personal knowledgebase. Obsidian has become my go-to tool for taking notes, thanks to its simplicity and the wide range of customization options available through community plugins. With the notes and calendar plugins enabled, I can easily capture my daily thoughts and keep track of the projects I'm working on. But what if I could take this a step further and use these notes as the foundation for a powerful chatbot?
+As an avid Obsidian user, I've always been fascinated by the potential of leveraging my daily notes as a personal knowledge base. Obsidian has become my go-to tool for taking notes, thanks to its simplicity and the wide range of customization options available through community plugins. With the notes and calendar plugins enabled, I can easily capture my daily thoughts and keep track of the projects I'm working on. But what if I could take this a step further and use these notes as the foundation for a powerful chatbot?
 
 Imagine having a personal assistant that could answer questions like:
 
@@ -35,11 +35,11 @@ For the language model, I chose OpenAI's GPT-4, as its advanced reasoning capabi
 
 The initial chatbot workflow looked like this:
 
-![[Pasted image 20240429153837.png]]
+![](/img/Pasted image 20240429153837.png)
 
 The first version of the chatbot was decent, but I wanted to find a way to measure its performance and track progress as I iterated. After some research, I discovered the [RAGAS framework](https://docs.ragas.io/en/latest/index.html), which is designed specifically for evaluating retrieval-augmented generation systems. By creating a dataset with question-answer pairs, I could measure metrics like answer correctness, relevancy, context precision, recall, and faithfulness.
 
-[Chatbot screenshot](/img/Pasted image 20240429154925.png)
+![Chatbot screenshot](/img/Pasted image 20240429154925.png)
 
 I included all the metrics available through the RAGAS library, as I was curious to see how they would be affected by my improvements. You can read more about [RAGAS metrics here](https://docs.ragas.io/en/latest/concepts/metrics/index.html). At this stage, I wasn't sure what to make of the numbers or whether they indicated good or bad performance, but it was a starting point.
 
