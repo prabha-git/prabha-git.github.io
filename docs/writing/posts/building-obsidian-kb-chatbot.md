@@ -18,7 +18,7 @@ Imagine having a personal assistant that could answer questions like:
 2. "Which projects was I working on back in February 2024?"
 3. "Could you give me a quick summary of my activities from last week?"
 
-Excited by the possibilities, I embarked on a journey to build a chatbot that could do just that. In this blog post, I'll share my experience of building this chat app from scratch, including the challenges I faced, the decisions I had to make, and the lessons I learned along the way.
+Excited by the possibilities, I embarked on a journey to build a chatbot that could do just that. In this blog post, I'll share my experience of building this chat app from scratch, including the challenges I faced, the decisions I had to make, and the lessons I learned along the way. You can find the final code in this [GitHub repo](https://github.com/prabha-git/obsidian_kb)
 
 ## Iteration 1: Laying the Groundwork
 
@@ -35,11 +35,11 @@ For the language model, I chose OpenAI's GPT-4, as its advanced reasoning capabi
 
 The initial chatbot workflow looked like this:
 
-![](/img/Pasted image 20240429153837.png)
+![](img/Pasted image 20240429153837.png)
 
 The first version of the chatbot was decent, but I wanted to find a way to measure its performance and track progress as I iterated. After some research, I discovered the [RAGAS framework](https://docs.ragas.io/en/latest/index.html), which is designed specifically for evaluating retrieval-augmented generation systems. By creating a dataset with question-answer pairs, I could measure metrics like answer correctness, relevancy, context precision, recall, and faithfulness.
 
-![Chatbot screenshot](/img/Pasted image 20240429154925.png)
+![Chatbot screenshot](img/Pasted image 20240429154925.png)
 
 I included all the metrics available through the RAGAS library, as I was curious to see how they would be affected by my improvements. You can read more about [RAGAS metrics here](https://docs.ragas.io/en/latest/concepts/metrics/index.html). At this stage, I wasn't sure what to make of the numbers or whether they indicated good or bad performance, but it was a starting point.
 
@@ -117,5 +117,7 @@ At this point, I have a functional chatbot that serves as a powerful search engi
 Building this chatbot has been an incredible learning experience, showcasing the power of combining Obsidian, vector databases, and language models. Not only has it given me a valuable tool for accessing my own knowledge, but it has also highlighted the importance of iterative development and continuous evaluation.
 
 I hope my journey inspires other Obsidian enthusiasts to explore the possibilities of creating their own personal knowledgebase chatbots. By leveraging our daily notes and harnessing the power of AI, we can unlock new ways to interact with and learn from the information we capture.
+
+You can find the final code in this [GitHub repo](https://github.com/prabha-git/obsidian_kb)
 
 If you have any feedback or simply want to connect, please hit me up on [LinkedIn](https://www.linkedin.com/in/prabha-arivalagan/) or [@prabha-tweet](https://twitter.com/prabhatweet)
