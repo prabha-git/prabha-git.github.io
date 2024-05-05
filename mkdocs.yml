@@ -123,16 +123,13 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
 nav:
-  - Writing: 'writing/'
+  - Blog: 'writing/'
   - Contact: 'contact.md'
   
 plugins:
   - social
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  - redirects:
-      redirect_maps:
-        '/': '/writing/'
   - minify:
       minify_html: true
   - mkdocstrings:
