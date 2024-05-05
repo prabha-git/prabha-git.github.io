@@ -123,8 +123,7 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
 nav:
-  - Blog:
-    - "writing/"
+  - Blog: "writing/"
   - Contact: 'contact.md'
   
 plugins:
