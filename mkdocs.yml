@@ -124,7 +124,7 @@ markdown_extensions:
       generic: true
 nav:
   - Blog:
-    - "writing/index.md"
+    - "writing/"
   - Contact: 'contact.md'
   
 plugins:
