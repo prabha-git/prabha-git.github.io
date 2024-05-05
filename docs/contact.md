@@ -1,11 +1,15 @@
 
-✉️  prabhakaran.mails@gmail.com
+# Prabha Arivalagan
 
-[Twitter (x) ](https://twitter.com/prabhatweet)
+AI Engineer 
 
-[Linkedin](https://www.linkedin.com/in/prabha-arivalagan/)
+- [Email ✉️](prabhakaran.mails@gmail.com)
 
-[Medium](https://medium.com/@prabhakaran_arivalagan)
+- [Github](https://github.com/prabha-git)
+
+- [Medium Blog](https://medium.com/@prabhakaran_arivalagan) 
+
+- [x / Twitter](https://twitter.com/prabhatweet)
 
 
 

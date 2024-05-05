@@ -1,16 +1,14 @@
 # Prabha Arivalagan
 
-AI Engineer [Github](https://github.com/prabha-git)
+AI Engineer 
 
+- [Email](prabhakaran.mails@gmail.com)
 
-## Medium Blogs
+- [Github](https://github.com/prabha-git)
 
-1. [Behind the Scene - ReAct Agents in Langchain](https://medium.com/p/4f7f48c2476d)
-2. [Understanding DSPy Using Phoenix](https://medium.com/@prabhakaran_arivalagan/understanding-dspy-using-phoenix-15ad2cca4cc6)
+- [Medium Blog](https://medium.com/@prabhakaran_arivalagan) 
 
-
-
-
+- [x / Twitter](https://twitter.com/prabhatweet)
 
 
 
