@@ -123,7 +123,7 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
 nav:
-  - Blog: "writing/"
+  - Blog: "writing/building-obsidian-kb-chatbot.md"
   - Contact: 'contact.md'
   
 plugins:
