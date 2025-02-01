@@ -33,16 +33,18 @@ jobs:
       - name: Copy Images to Site
         run: |
           mkdir -p site/assets/images
-          cp -r assets/images/* site/assets/images/
+          cp -r assets/images/. site/assets/images/
+
+      - name: List Site Directory (Debug)
+        run: |
+          ls -R site
 
       - name: Create CNAME File
         run: echo "prabha.ai" > site/CNAME
         # Replace "prabha.ai" with your actual custom domain.
-        # The 'site' directory is the default build directory for MkDocs.
-        # If you have configured a different directory, adjust the path accordingly.
 
       - name: Deploy to GitHub Pages
-        run: |
-          mkdocs gh-deploy --force --verbose  # Deploy the site to the gh-pages branch.
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: site
