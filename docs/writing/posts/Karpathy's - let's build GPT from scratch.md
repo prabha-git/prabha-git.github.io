@@ -30,8 +30,7 @@ authors:
 		Character level language model
 		
 		Method: Bigram (Predict next char using previous char)
-![[Pasted image 20250130124540.png]]
-
+![Pasted%20image%2020250130124540](assets/images/Pasted%20image%2020250130124540.png)
 	As seens above, it doesn't give good names. Bigram model is not good for predicting next character.
 	
 	In "bigram" model probabilities become the parameter of bigram language model.
