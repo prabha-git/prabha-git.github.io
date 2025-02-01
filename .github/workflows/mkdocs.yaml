@@ -30,9 +30,14 @@ jobs:
         run: |
           mkdocs build --verbose  # Build the site.
 
+      - name: Copy Images to Site
+        run: |
+          mkdir -p site/assets/images
+          cp -r assets/images/* site/assets/images/
+
       - name: Create CNAME File
         run: echo "prabha.ai" > site/CNAME
-        # Replace "yourcustomdomain.com" with your actual custom domain.
+        # Replace "prabha.ai" with your actual custom domain.
         # The 'site' directory is the default build directory for MkDocs.
         # If you have configured a different directory, adjust the path accordingly.
 
