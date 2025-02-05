@@ -30,7 +30,7 @@ authors:
 		Character level language model
 		
 		Method: Bigram (Predict next char using previous char)
-![Pasted%20image%2020250130124540](docs/writing/posts/img/Pasted%20image%2020250130124540.png)
+![Pasted%20image%2020250130124540](img/Pasted%20image%2020250130124540.png)
 	As seens above, it doesn't give good names. Bigram model is not good for predicting next character.
 	
 	In "bigram" model probabilities become the parameter of bigram language model.
@@ -133,7 +133,9 @@ In this class we would build makemore to predict based on last 3 characters.
 #### Embedding
 As a first step, we need to build embedding for the characters, we start with 2 dimensional embedding.
 
-![[Pasted image 20250205123847.png]]
+![Pasted%20image%2020250130124540](img/Pasted%20image%2020250205123847.png)
+
+Pasted image 20250205123847.png
 
 ```python
 h = emb.view(-1, 6) @ W1 + b1 # Hiden layer activation
