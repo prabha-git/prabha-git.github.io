@@ -111,7 +111,7 @@ In the first approach, we added 1 to the actual count because we don't want to e
 
 Similarly, gradient based approach has a way to "smoothing". When you keep all values of `W` to be zero, exp(W) gives all ones and softmax would provide equal probabilities to all outputs. You incentivise this in loss function by using second component like below 
 
- ```
+ ```python
 loss = -probs[torch.arange(228146), ys].log().mean() + (0.1 * (W**2).mean())
 ```
 
