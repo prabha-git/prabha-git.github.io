@@ -26,7 +26,7 @@ authors:
 
 	Dataset: people names dataset in givernment website
 	
-## Iteration 1:
+### Iteration 1:
 		Character level language model
 		
 		Method: Bigram (Predict next char using previous char)
@@ -68,7 +68,7 @@ print(f'{nll/n=}')
 
 To avoid infinity probability for some predictions, people do model "smoothing" (assigning very small probability to unlikely scenario)
 
-## Iteration 2: Bigram Language Model using Neural Network
+### Iteration 2: Bigram Language Model using Neural Network
 
 Need to create a dataset for training, i.e input and output char pair. (x and y).
 
@@ -126,5 +126,83 @@ We ended up with the same model , in the  NN based approach the `W` represents t
 
 
 
+## [Building makemore Part 2: MLP - YouTube](https://www.youtube.com/watch?v=TCH_1BHY58I)
 
+In this class we would build makemore to predict based on last 3 characters.
+
+#### Embedding
+As a first step, we need to build embedding for the characters, we start with 2 dimensional embedding.
+
+![[Pasted image 20250205123847.png]]
+
+```python
+h = emb.view(-1, 6) @ W1 + b1 # Hiden layer activation
+```
+
+We index on embedding matrix to get the weight / embeddings for the character. Another way to interpret is one hot encoding. indexing and one hot encoding produce similar result. in this case we think first layer as weight of neural network.
+
+```python
+logits = h @ W2 + b2
+counts = logits.exp()
+prob = counts/counts.sum(1,keepdims=True)
+prob.shape
+# torch.Size([32, 27])
+```
+
+In Final layer we get probability distribution for all 27 characters.
+
+
+```python
+# Negative Log likelihood 
+
+loss = -prob[torch.arange(32), Y].log().mean()
+loss
+```
+
+In Practice, we use mini batch for forward or backward pass. it is efficient than optimizing on the entire dataset.
+
+it is much efficient to take many steps (iteration) with low confidence in gradient
+
+#### Learning rate
+
+Learning rate is an important hyper , we need to find the reasonable range manually and we can use different techniques to search for the optimal parameter in that range.
+
+#### Dataset split
+
+Important to split dataset into three sets
+ - train split is to find model parameters 
+
+- dev split is to find hyper parameters
+
+- test split is to evaluate the model performance finally
+
+we improve the model by increasing the complexity by increasing the parameters. for example hidden layer neurons can be increased.
+
+
+In our case , bottle neck may be the embeddings, we are cramping all the character in just two dimensional space. we can increase embedding dimensions to 10 from 2.
+
+Now we get better name sounding words than before ( with just one character in context)
+
+```
+dex.
+marial.
+mekiophity.
+nevonimitta.
+nolla.
+kyman.
+arreyzyne.
+javer.
+gota.
+mic.
+jenna.
+osie.
+tedo.
+kaley.
+mess.
+suhaiaviyny.
+fobs.
+mhiriel.
+vorreys.
+dasdro.
+```
 
