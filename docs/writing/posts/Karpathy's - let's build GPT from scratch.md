@@ -111,9 +111,12 @@ In the first approach, we added 1 to the actual count because we don't want to e
 
 Similarly, gradient based approach has a way to "smoothing". When you keep all values of `W` to be zero, exp(W) gives all ones and softmax would provide equal probabilities to all outputs. You incentivise this in loss function by using second component like below 
 
- ```python
+
+```python
 loss = -probs[torch.arange(228146), ys].log().mean() + (0.1 * (W**2).mean())
 ```
+
+
 
 Second component pushed W to be zero , 0.1 is the strength of Regularization that determines the how much weight we want to give to this regularization component. It is similar to the number of "fake" count you add in the first approach.
 
@@ -135,11 +138,13 @@ As a first step, we need to build embedding for the characters, we start with 2 
 
 ![Pasted%20image%2020250130124540](img/Pasted%20image%2020250205123847.png)
 
-Pasted image 20250205123847.png
+
+
 
 ```python
 h = emb.view(-1, 6) @ W1 + b1 # Hiden layer activation
 ```
+
 
 We index on embedding matrix to get the weight / embeddings for the character. Another way to interpret is one hot encoding. indexing and one hot encoding produce similar result. in this case we think first layer as weight of neural network.
 
