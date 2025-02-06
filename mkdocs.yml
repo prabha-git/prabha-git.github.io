@@ -68,8 +68,8 @@ theme:
           icon: material/brightness-4
           name: Switch to light mode
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: Courier Prime
+    code: Courier Prime
 # Extensions
 markdown_extensions:
   - abbr
@@ -178,8 +178,14 @@ extra:
       link: https://twitter.com/prabhatweet
     - icon: fontawesome/brands/github
       link: https://github.com/prabha-git
+extra_css:
+  - stylesheets/extra.css
+
 extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  
+extra:
+  generator: false
 copyright: Copyright &copy; 2024 Prabha Arivalagan
