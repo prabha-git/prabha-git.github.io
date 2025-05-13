@@ -1,3 +1,14 @@
+---
+draft: false
+date: 2025-05-13
+slug: the-language-of-agents
+tags:
+  - llm
+authors:
+  - Prabha
+---
+
+
 Ever wondered how apps get AI to chat, follow instructions, or even use tools? A lot of the magic comes down to "messages." Think of them as the notes passed between you, the AI, and any other services involved. LangChain and LangGraph are awesome tools that help manage these messages, making it easier to build cool AI-powered stuff. Let's break down how it works, keeping it simple!
 
 ## The Main Players: Core Message Types
