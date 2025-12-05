@@ -1,9 +1,9 @@
 ---
 draft: false
 date: 2025-12-05
-slug: 
-tags: evolution-ai-coding
-  - coding-assistant
+slug: evolution-ai-coding
+tags:
+  - coding-assistent
 authors:
   - Prabha
 ---
