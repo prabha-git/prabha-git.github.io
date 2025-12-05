@@ -68,7 +68,7 @@ This phase is emerging, not arrived. Google just released [Antigravity](https://
 
 And let's be honest: even the smartest models make basic mistakes. Building a production system with just prompting remains far-fetched. Code written entirely by AI tends to be bloated, unoptimized, and hard to maintain.
 
-As @catalinmpit put it: "Vibe coding is easy. Vibe debugging is the hard part."
+As [@catalinmpit](https://x.com/catalinmpit/status/1896500679960907922) put it: "Vibe coding is easy. Vibe debugging is the hard part."
 
 ---
 
@@ -80,6 +80,8 @@ Each shift follows the same pattern: AI becomes capable of something new, and th
 - **Copilot/Chat:** AI understands intent → Developer directs, AI executes
 - **Agents:** AI reasons autonomously → Developer manages, AI delivers
 
-The constant is change. The role keeps shifting. What worked yesterday may not be enough tomorrow.
+The fully autonomous agent phase? It's coming, but not here yet. Right now, orchestrating multiple agents on a real project feels overwhelming and chaotic.
 
-The question isn't which phase is "best." It's recognizing where you are, understanding where things are heading, and adapting as the transformation continues.
+So I work like Litt's surgeon: hands-on for the decisions that matter, delegating the tedious grunt work to AI. The agents handle the boilerplate, the refactoring, the test scaffolding. I handle the architecture, the trade-offs, the judgment calls.
+
+That balance will shift. But for now, it works.
