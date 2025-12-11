@@ -130,13 +130,13 @@ AI Engineer writing about agents, LLMs, and cloud infrastructure
         post_url = generate_post_url(post['date'], post['slug'])
 
         # Post title (linked)
-        index_content += f"### [{post['title']}]({post_url})\n"
+        index_content += f"### [{post['title']}]({post_url})\n\n"
 
         # Date and tags
-        index_content += f"**{date_str}**"
+        index_content += f'<p class="post-meta">{date_str}'
         if tags_str:
             index_content += f" • {tags_str}"
-        index_content += "\n\n"
+        index_content += "</p>\n\n"
 
         # Excerpt
         if post['excerpt']:
