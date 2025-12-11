@@ -9,7 +9,6 @@ edit_uri: edit/main/docs/
 copyright: Copyright &copy; 2024 Prabha Arivalagan
 theme:
   name: material
-  logo: logo.png
   favicon: logo.png
   icon:
     repo: fontawesome/brands/github
