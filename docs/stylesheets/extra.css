@@ -65,8 +65,8 @@ body {
 .md-typeset {
     font-family: "Courier Prime", monospace !important;
     font-weight: 400 !important;
-    font-size: 0.875rem !important;
-    line-height: 1.65 !important;
+    font-size: 0.85rem !important;
+    line-height: 1.6 !important;
     letter-spacing: 0.01em;
 }
 
@@ -76,50 +76,50 @@ code {
 
 /* Heading hierarchy */
 .md-typeset h1 {
-    font-size: 1.5rem !important;
+    font-size: 1.3rem !important;
     line-height: 1.3 !important;
     margin-top: 0 !important;
-    margin-bottom: 1rem !important;
+    margin-bottom: 0.75rem !important;
     font-weight: 700 !important;
     letter-spacing: -0.01em;
 }
 
 .md-typeset h2 {
-    font-size: 1.3rem !important;
+    font-size: 1.2rem !important;
     line-height: 1.35 !important;
-    margin-top: 2rem !important;
-    margin-bottom: 1rem !important;
-    font-weight: 700 !important;
-}
-
-.md-typeset h3 {
-    font-size: 1.15rem !important;
-    line-height: 1.4 !important;
-    margin-top: 1.75rem !important;
+    margin-top: 1.5rem !important;
     margin-bottom: 0.75rem !important;
     font-weight: 700 !important;
 }
 
-.md-typeset h4 {
-    font-size: 1rem !important;
-    line-height: 1.45 !important;
+.md-typeset h3 {
+    font-size: 1.1rem !important;
+    line-height: 1.4 !important;
     margin-top: 1.5rem !important;
+    margin-bottom: 0.5rem !important;
+    font-weight: 700 !important;
+}
+
+.md-typeset h4 {
+    font-size: 0.95rem !important;
+    line-height: 1.45 !important;
+    margin-top: 1.25rem !important;
     margin-bottom: 0.5rem !important;
     font-weight: 700 !important;
 }
 
 /* Paragraph spacing */
 .md-typeset p {
-    margin-bottom: 1rem !important;
-    line-height: 1.65 !important;
+    margin-bottom: 0.85rem !important;
+    line-height: 1.6 !important;
 }
 
 /* Subtitle spacing (first paragraph after h1) */
 .md-typeset h1 + p {
     margin-top: 0.5rem !important;
-    font-size: 0.9rem !important;
+    font-size: 0.85rem !important;
     color: var(--md-default-fg-color--light);
-    margin-bottom: 1.5rem !important;
+    margin-bottom: 1.25rem !important;
 }
 
 /* Remove default top margin from first header */
@@ -151,12 +151,12 @@ code {
 
 /* Main content spacing */
 .md-main__inner {
-    margin-top: 1rem !important;
-    padding-top: 1.5rem !important;
+    margin-top: 0.5rem !important;
+    padding-top: 1rem !important;
 }
 
 .md-content {
-    padding-top: 1rem !important;
+    padding-top: 0.75rem !important;
 }
 
 /* Hide the logo in the header */
@@ -171,8 +171,8 @@ code {
 /* Enhanced horizontal rules */
 .md-typeset hr {
     border: none;
-    border-top: 3px solid var(--blog-border);
-    margin: 3rem 0 !important;
+    border-top: 2px solid var(--blog-border);
+    margin: 2rem 0 !important;
     position: relative;
     opacity: 1;
 }
@@ -192,7 +192,7 @@ code {
 
 /* Section spacing */
 .md-typeset section {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 /* ========================================
@@ -252,9 +252,9 @@ code {
 .md-post {
     background: var(--blog-bg-card);
     border: 2px solid var(--blog-border);
-    border-radius: 8px;
-    padding: 2rem;
-    margin-bottom: 2rem;
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: var(--blog-shadow-sm);
 }
@@ -499,39 +499,39 @@ button:focus-visible {
 @media (max-width: 768px) {
     /* Reduce padding on mobile */
     .md-post {
-        padding: 1.25rem;
-        margin-bottom: 1.5rem;
+        padding: 1rem;
+        margin-bottom: 1.25rem;
     }
 
     /* Adjust metadata layout */
     .md-meta__list {
-        gap: 1rem;
-        font-size: 0.85rem;
+        gap: 0.75rem;
+        font-size: 0.8rem;
     }
 
     /* Adjust typography for mobile */
     .md-typeset h1 {
-        font-size: 1.4rem !important;
+        font-size: 1.25rem !important;
     }
 
     .md-typeset h2 {
-        font-size: 1.2rem !important;
+        font-size: 1.15rem !important;
     }
 
     .md-typeset h3 {
-        font-size: 1.1rem !important;
+        font-size: 1.05rem !important;
     }
 
     /* Reduce spacing */
     .md-typeset hr {
-        margin: 2rem 0 !important;
+        margin: 1.5rem 0 !important;
     }
 
     .md-main__inner {
-        padding-top: 1rem !important;
+        padding-top: 0.75rem !important;
     }
 
     .md-content {
-        padding-top: 0.75rem !important;
+        padding-top: 0.5rem !important;
     }
 }
