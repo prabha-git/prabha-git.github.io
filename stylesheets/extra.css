@@ -55,3 +55,12 @@ code {
 .md-header__button.md-logo {
     display: none !important;
 }
+
+/* Tighten spacing between Title and Subtitle */
+.md-typeset h1 {
+    margin-bottom: 0.2rem !important;
+}
+
+.md-typeset h1 + p {
+    margin-top: 0 !important;
+}
