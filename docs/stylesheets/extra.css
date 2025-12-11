@@ -14,4 +14,10 @@ body {
 
 code {
     font-family: "Courier Prime", monospace !important;
-} 
+}
+
+/* Make horizontal separators darker */
+.md-typeset hr {
+    border-bottom: 2px solid #666;
+    opacity: 1;
+}
