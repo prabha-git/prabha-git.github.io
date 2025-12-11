@@ -2,13 +2,11 @@
 
 body {
     font-family: "Courier Prime", monospace !important;
-    font-style: italic !important;
     font-weight: 400 !important;
 }
 
 .md-typeset {
     font-family: "Courier Prime", monospace !important;
-    font-style: italic !important;
     font-weight: 400 !important;
 }
 
@@ -20,4 +18,13 @@ code {
 .md-typeset hr {
     border-bottom: 2px solid #666;
     opacity: 1;
+    margin: 3em 0;
+}
+
+.post-meta {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: -1em;
+    margin-bottom: 1.5em;
+    font-style: italic;
 }
