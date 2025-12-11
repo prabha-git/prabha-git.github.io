@@ -28,3 +28,8 @@ code {
     margin-bottom: 1.5em;
     font-style: italic;
 }
+
+/* Widen the layout */
+.md-grid {
+    max-width: 1400px;
+}
