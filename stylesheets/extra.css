@@ -33,3 +33,9 @@ code {
 .md-grid {
     max-width: 1400px;
 }
+
+/* Reduce white space between header and title */
+.md-main__inner {
+    margin-top: 0;
+    padding-top: 0.5rem; /* Drastically reduce top padding */
+}
