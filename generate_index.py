@@ -145,9 +145,11 @@ AI Engineer writing about agents, LLMs, and cloud infrastructure
         # Read more link
         index_content += f"[Read more →]({post_url})\n\n"
 
-    # Footer with link to all posts and contact info
-    index_content += """---
+        # Add visual separator between posts
+        index_content += "---\n\n"
 
+    # Footer with link to all posts and contact info
+    index_content += """
 [View all posts →](/writing/)
 
 ## Contact
