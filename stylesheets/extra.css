@@ -29,18 +29,29 @@ code {
     font-style: italic;
 }
 
-/* Widen the layout */
+/* Widen the layout - Force override */
 .md-grid {
-    max-width: 1400px;
+    max-width: 90% !important; /* Use percentage for responsiveness */
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
-/* Reduce white space between header and title */
+/* Reduce white space between header and title - Force override */
 .md-main__inner {
-    margin-top: 0;
-    padding-top: 0.5rem; /* Drastically reduce top padding */
+    margin-top: 0 !important;
+    padding-top: 1rem !important;
 }
 
-/* Hide the logo in the header */
+.md-content {
+    padding-top: 0 !important;
+}
+
+/* Remove default top margin from the first header in content */
+.md-typeset h1:first-child {
+    margin-top: 0 !important;
+}
+
+/* Hide the logo in the header - Force override */
 .md-header__button.md-logo {
-    display: none;
+    display: none !important;
 }
