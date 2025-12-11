@@ -1,5 +1,4 @@
 # Prabha Arivalagan
-
 AI Engineer writing about agents, LLMs, and cloud infrastructure
 
 ## Recent Writing
