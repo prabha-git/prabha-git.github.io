@@ -10,7 +10,7 @@ authors:
   - Prabha
 ---
 
-# Claude Agent SDK vs. Google ADK: Completely different Usecases
+# Claude Agent SDK vs. Google ADK: for Completely different Usecases
 
 Despite similar names, Anthropic’s Claude Agent SDK and Google’s Agent Development Kit (ADK) are fundamentally different tools addressing distinct problems.
 
@@ -64,7 +64,7 @@ ADK is for building scalable, multi-agent microservices. It cares about system a
 
 ---
 
-## 4. Scaling Claude for the Enterprise
+## 4. Scaling Claude for the Enterprise Agentic usecases
 
 The Claude Agent SDK is a local autonomous runtime, not an enterprise orchestration platform.
 
