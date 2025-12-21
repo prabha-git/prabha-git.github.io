@@ -39,7 +39,7 @@ ADK is for building scalable, multi-agent microservices. It cares about system a
 
 ---
 
-## 2. Architecture: Local Process vs. Cloud Microservices
+## 2. Architecture: Local Process vs. Cloud orchestrator
 
 ### Claude Agent SDK: The Stateful Process
 *   **Architecture:** It runs as a single, stateful process on your machine (or in a CI container). It keeps execution context in RAM and persists changes directly to your local filesystem.
