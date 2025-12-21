@@ -2,62 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://prabha.github.io/</loc>
-         <lastmod>2025-12-11</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://prabha.github.io/assessment/</loc>
-         <lastmod>2025-12-11</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://prabha.github.io/books/</loc>
-         <lastmod>2025-12-11</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://prabha.github.io/contact/</loc>
-         <lastmod>2025-12-11</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://prabha.github.io/writing/</loc>
-         <lastmod>2025-12-11</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://prabha.github.io/writing/2024/03/19/lets-build-gpt-from-scratch/</loc>
-         <lastmod>2025-12-11</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://prabha.github.io/writing/2025/05/13/the-language-of-agents/</loc>
-         <lastmod>2025-12-11</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://prabha.github.io/writing/2025/10/04/agents-in-gcp/</loc>
-         <lastmod>2025-12-11</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://prabha.github.io/writing/2024/08/18/building-obsidian-kb-chatbot/</loc>
-         <lastmod>2025-12-11</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://prabha.github.io/writing/2024/04/29/building-obsidian-kb-chatbot/</loc>
-         <lastmod>2025-12-11</lastmod>
+         <lastmod>2025-12-21</lastmod>
+    </url>
+    <url>
+         <loc>https://prabha.github.io/writing/2025/12/21/claude-agent-sdk-vs-google-adk/</loc>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://prabha.github.io/writing/2025/12/05/evolution-ai-coding/</loc>
-         <lastmod>2025-12-11</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://prabha.github.io/writing/2024/04/19/quantized-llm-models/</loc>
-         <lastmod>2025-12-11</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://prabha.github.io/writing/2024/03/06/tokenizer-comparison/</loc>
-         <lastmod>2025-12-11</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://prabha.github.io/writing/archive/2025/</loc>
-         <lastmod>2025-12-11</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://prabha.github.io/writing/archive/2024/</loc>
-         <lastmod>2025-12-11</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
 </urlset>
