@@ -10,7 +10,7 @@ authors:
   - Prabha
 ---
 
-# Claude Agent SDK vs. Google ADK: A Technical Breakdown
+# Claude Agent SDK vs. Google ADK: Completely different Usecases
 
 Despite similar names, Anthropic’s Claude Agent SDK and Google’s Agent Development Kit (ADK) are fundamentally different tools addressing distinct problems.
 
@@ -26,7 +26,7 @@ They aren't just two flavors of the same thing. They represent fundamentally dif
 It really comes down to where the execution loop lives and who controls it.
 
 ### Claude Agent SDK: The Autonomous Loop
-This is basically a programmatic wrapper around Anthropic's "Computer Use" capability (the official term for the model's ability to control a mouse and keyboard). It’s a local runtime that gives the agent direct access to your environment—shell, filesystem, and browser—running with your permissions.
+This is basically a programmatic wrapper around Anthropic's "Computer Use" capability (the official term for the model's ability to control a mouse and keyboard). It’s a local runtime that gives the agent direct access to your environment, shell, filesystem, and browser, running with your permissions.
 
 *   **Logic:** Highly autonomous. The SDK owns the `Thought` → `Bash/Edit` → `Observation` loop. You don't write the steps; you write the goal ("Refactor auth.py"), and it figures out the context window and tool calls.
 *   **Role:** It acts as an autonomous operator. It executes commands directly on the host machine, maintaining context in the shell session and file system.
@@ -34,7 +34,7 @@ This is basically a programmatic wrapper around Anthropic's "Computer Use" capab
 ### Google ADK: The Orchestrated Graph
 ADK is for building scalable, multi-agent microservices. It cares about system architecture, not individual execution loops.
 
-*   **Logic:** Developer-defined. You explicitly wire up the control flow—Sequential, Router, or Hierarchical patterns. The LLM is just a component you call, not the primary driver of execution.
+*   **Logic:** Developer-defined. You explicitly wire up the control flow Sequential, parallel, loop or Hierarchical patterns. The LLM is just a component you call, not the primary driver of execution.
 *   **Role:** It acts as a workflow engine. It manages the state of a multi-turn process (like a customer support ticket) and delegates steps to stateless agents.
 
 ---
