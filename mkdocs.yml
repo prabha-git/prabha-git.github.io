@@ -1,20 +1,21 @@
-site_name: prabha.ai
+site_name: prabha.dev
 site_author: Prabha Arivalagan
 site_description: >-
   Notes about my hobbies and other things I find interesting.
 repo_name: blog
 repo_url: https://github.com/prabha-git/prabha-git.github.io
-site_url: https://prabha.github.io/
+site_url: https://prabha.dev/
 edit_uri: edit/main/docs/
-copyright: Copyright &copy; 2024 Prabha Arivalagan
+copyright: Copyright &copy; 2025 Prabha Arivalagan
+
 theme:
   name: material
   favicon: logo.png
   icon:
     repo: fontawesome/brands/github
-    edit: material/pencil 
+    edit: material/pencil
     view: material/eye
-    theme:
+  theme:
     admonition:
       note: octicons/tag-16
       abstract: octicons/checklist-16
@@ -54,21 +55,22 @@ theme:
     - search.suggest
     - toc.follow
   palette:
-      - scheme: default
-        primary: indigo
-        accent: indigo
-        toggle:
-          icon: material/brightness-7
-          name: Switch to dark mode
-      - scheme: slate
-        primary: black
-        accent: indigo
-        toggle:
-          icon: material/brightness-4
-          name: Switch to light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
   font:
     text: Courier Prime
     code: Courier Prime
+
 # Extensions
 markdown_extensions:
   - abbr
@@ -98,7 +100,7 @@ markdown_extensions:
   - pymdownx.magiclink:
       normalize_issue_symbols: true
       repo_url_shorthand: true
-      user: jxnl 
+      user: jxnl
       repo: instructor
   - pymdownx.mark
   - pymdownx.smartsymbols
@@ -119,25 +121,17 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
-  - pymdownx.arithmatex:
-      generic: true
+
 nav:
   - Blog: 'writing/'
   - Contact: 'contact.md'
-  
+
 plugins:
   - social
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - minify:
       minify_html: true
-  - mkdocstrings:
-      handlers:
-        python:
-          options:
-            members_order: alphabetical
-            allow_inspection: true
-            show_bases: true
   - blog:
       enabled: !ENV CI
       blog_dir: 'writing'
@@ -147,13 +141,14 @@ plugins:
       post_url_format: "{date}/{slug}"
       authors_file: "{blog}/.authors.yml"
   - rss:
-      match_path: writing/posts/.* 
+      match_path: writing/posts/.*
       date_from_meta:
         as_creation: date
       categories:
         - categories
-        - tags 
+        - tags
       enabled: !ENV [CI, false]
+
 extra:
   analytics:
     provider: google
@@ -169,7 +164,7 @@ extra:
         - icon: material/emoticon-sad-outline
           name: This page could be improved
           data: 0
-          note: >- 
+          note: >-
             Thanks for your feedback! Help us improve this page by
             using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
   social:
@@ -177,14 +172,15 @@ extra:
       link: https://twitter.com/prabhatweet
     - icon: fontawesome/brands/github
       link: https://github.com/prabha-git
+
 extra_css:
   - stylesheets/extra.css
 
 extra_javascript:
   - javascripts/mathjax.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  
+
 extra:
   generator: false
-copyright: Copyright &copy; 2024 Prabha Arivalagan
+
+copyright: Copyright &copy; 2025 Prabha Arivalagan
