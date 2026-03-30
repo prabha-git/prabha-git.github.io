@@ -44,8 +44,8 @@ jobs:
           ls -R site
 
       - name: Create CNAME File
-        run: echo "prabha.ai" > site/CNAME
-        # Replace "prabha.ai" with your actual custom domain.
+        run: echo "prabha.dev" > site/CNAME
+        # Replace "prabha.dev" with your actual custom domain.
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
