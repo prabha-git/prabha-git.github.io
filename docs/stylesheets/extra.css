@@ -535,3 +535,12 @@ button:focus-visible {
         padding-top: 0.5rem !important;
     }
 }
+
+
+/* Fix author avatar being clipped by global img margin */
+.md-author img {
+  margin: 0 !important;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
