@@ -544,3 +544,110 @@ button:focus-visible {
   height: 100%;
   object-fit: cover;
 }
+
+
+/* ============================================
+   TABLE OF CONTENTS - Improved Styling
+   ============================================ */
+
+/* TOC title */
+.md-nav--secondary > .md-nav__title {
+  font-size: 0.7rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+  color: var(--blog-primary) !important;
+  padding-bottom: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+  border-bottom: 2px solid var(--blog-primary) !important;
+}
+
+/* TOC links - base */
+.md-nav--secondary .md-nav__link {
+  font-size: 0.72rem !important;
+  line-height: 1.5 !important;
+  color: var(--blog-text-secondary) !important;
+  padding: 0.35rem 0.75rem !important;
+  border-left: 2px solid transparent !important;
+  transition: all 0.2s ease !important;
+  display: block !important;
+  border-radius: 0 4px 4px 0 !important;
+}
+
+/* TOC links - hover */
+.md-nav--secondary .md-nav__link:hover {
+  color: var(--blog-primary) !important;
+  border-left-color: var(--blog-primary) !important;
+  background: rgba(64, 81, 181, 0.04) !important;
+}
+
+/* TOC links - active section */
+.md-nav--secondary .md-nav__link--active,
+.md-nav--secondary .md-nav__item--active > .md-nav__link {
+  color: var(--blog-primary) !important;
+  border-left-color: var(--blog-primary) !important;
+  font-weight: 700 !important;
+  background: rgba(64, 81, 181, 0.06) !important;
+}
+
+/* TOC nested items (h3) - indented and lighter */
+.md-nav--secondary .md-nav .md-nav__link {
+  font-size: 0.68rem !important;
+  padding-left: 1.25rem !important;
+  color: var(--blog-text-tertiary) !important;
+}
+
+.md-nav--secondary .md-nav .md-nav__link:hover {
+  color: var(--blog-primary) !important;
+}
+
+/* Clean up list spacing */
+.md-nav--secondary .md-nav__list {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.md-nav--secondary .md-nav__item {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Dark mode adjustments for TOC */
+[data-md-color-scheme="slate"] .md-nav--secondary .md-nav__link:hover,
+[data-md-color-scheme="slate"] .md-nav--secondary .md-nav__link--active,
+[data-md-color-scheme="slate"] .md-nav--secondary .md-nav__item--active > .md-nav__link {
+  background: rgba(130, 150, 255, 0.08) !important;
+}
+
+/* ============================================
+   CREATOR CARD - Compact on blog posts
+   ============================================ */
+
+/* Make the author profile card compact on individual posts */
+.md-post .md-post__profile {
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+}
+
+/* Smaller avatar on posts */
+.md-post .md-author {
+  width: 36px !important;
+  height: 36px !important;
+}
+
+/* Compact metadata layout */
+.md-post .md-post__meta {
+  font-size: 0.7rem !important;
+  gap: 0.25rem !important;
+}
+
+/* Hide the "Creator" subtitle on individual post pages to save space */
+.md-post .md-profile__description {
+  display: none !important;
+}
+
+/* Tighter sidebar spacing on posts */
+.md-sidebar--primary .md-post__meta {
+  padding: 0.5rem 0 !important;
+}
