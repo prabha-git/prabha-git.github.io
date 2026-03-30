@@ -619,35 +619,21 @@ button:focus-visible {
   background: rgba(130, 150, 255, 0.08) !important;
 }
 
-/* ============================================
-   CREATOR CARD - Compact on blog posts
-   ============================================ */
-
-/* Make the author profile card compact on individual posts */
-.md-post .md-post__profile {
-  flex-direction: row !important;
-  align-items: center !important;
-  gap: 0.5rem !important;
-}
-
-/* Smaller avatar on posts */
-.md-post .md-author {
-  width: 36px !important;
-  height: 36px !important;
-}
-
-/* Compact metadata layout */
-.md-post .md-post__meta {
-  font-size: 0.7rem !important;
-  gap: 0.25rem !important;
-}
-
-/* Hide the "Creator" subtitle on individual post pages to save space */
-.md-post .md-profile__description {
+/* =============================================
+   CREATOR CARD - Hide on individual blog posts,
+   show only on homepage/index
+   ============================================= */
+.md-sidebar--post .md-post__authors {
   display: none !important;
 }
 
-/* Tighter sidebar spacing on posts */
-.md-sidebar--primary .md-post__meta {
-  padding: 0.5rem 0 !important;
+/* Hide the "Metadata" nav title on post pages */
+.md-sidebar--post .md-post__meta > .md-nav__title {
+  display: none !important;
+}
+
+/* Clean up remaining metadata spacing */
+.md-sidebar--post .md-post__meta {
+  padding-top: 0.75rem !important;
+  border-top: 1px solid var(--blog-border, #e0e0e0) !important;
 }
