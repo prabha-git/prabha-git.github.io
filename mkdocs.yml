@@ -123,13 +123,14 @@ markdown_extensions:
   - pymdownx.tilde
 
 nav:
+  - Home: 'index.md'
   - Blog: 'writing/'
   - Contact: 'contact.md'
 
 plugins:
   - social
   - search:
-      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+      separator: '[\s​\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!)(?=[A-Z][a-z])'
   - minify:
       minify_html: true
   - blog:
