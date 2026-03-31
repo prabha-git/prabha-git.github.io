@@ -640,21 +640,23 @@ button:focus-visible {
 
 
 /* =============================================
-   ELEGANT NAVIGATION & LAYOUT REDESIGN
-   Keep Courier Prime font, refine structure
+   PROFESSIONAL NAVIGATION & LAYOUT
+   Clean, minimal design. Courier Prime preserved.
    ============================================= */
 
-/* --- HEADER - Cleaner with gradient --- */
+/* --- HEADER - Dark slate, clean --- */
 .md-header {
-  background: linear-gradient(135deg, #2c3e7a 0%, #4051b5 50%, #5c6bc0 100%) !important;
-  box-shadow: 0 2px 20px rgba(64, 81, 181, 0.15) !important;
+  background: #2d3748 !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid rgba(255,255,255,0.06) !important;
 }
 
 .md-header__title {
   font-weight: 400 !important;
-  letter-spacing: 0.15em !important;
-  font-size: 0.95rem !important;
+  letter-spacing: 0.2em !important;
+  font-size: 0.82rem !important;
   text-transform: lowercase !important;
+  opacity: 0.9 !important;
 }
 
 /* Hide GitHub repo badge for cleaner header */
@@ -662,19 +664,20 @@ button:focus-visible {
   display: none !important;
 }
 
-/* --- NAV TABS - Uppercase elegant style --- */
+/* --- NAV TABS - Minimal uppercase --- */
 .md-tabs {
-  background: rgba(44, 62, 122, 0.95) !important;
-  border-bottom: 1px solid rgba(255,255,255,0.08) !important;
+  background: #2d3748 !important;
+  border-bottom: 1px solid rgba(255,255,255,0.06) !important;
 }
 
 .md-tabs__link {
-  font-size: 0.72rem !important;
-  letter-spacing: 0.12em !important;
+  font-size: 0.68rem !important;
+  letter-spacing: 0.14em !important;
   text-transform: uppercase !important;
-  opacity: 0.7 !important;
-  transition: all 0.3s ease !important;
-  padding: 0.6rem 1.2rem !important;
+  opacity: 0.5 !important;
+  transition: opacity 0.3s ease !important;
+  padding: 0.5rem 1rem !important;
+  font-weight: 400 !important;
 }
 
 .md-tabs__link:hover,
@@ -682,174 +685,185 @@ button:focus-visible {
   opacity: 1 !important;
 }
 
-/* --- HOMEPAGE HERO - Name and tagline --- */
+/* --- HERO SECTION --- */
 .md-content h1 {
-  font-size: 2.2rem !important;
+  font-size: 1.8rem !important;
   font-weight: 700 !important;
-  letter-spacing: -0.01em !important;
-  margin-bottom: 0.25rem !important;
-  color: var(--blog-text-primary, #212121) !important;
+  letter-spacing: 0 !important;
+  margin-bottom: 0.15rem !important;
+  color: var(--blog-text-primary, #1a1a1a) !important;
   border-bottom: none !important;
   padding-bottom: 0 !important;
 }
 
 .md-content h1 + p {
-  font-size: 0.85rem !important;
-  color: var(--blog-text-secondary, #666) !important;
-  letter-spacing: 0.05em !important;
-  margin-bottom: 2.5rem !important;
-  padding-bottom: 1.5rem !important;
-  border-bottom: 1px solid var(--blog-border, #e0e0e0) !important;
+  font-size: 0.78rem !important;
+  color: var(--blog-text-tertiary, #888) !important;
+  letter-spacing: 0.02em !important;
+  margin-bottom: 3rem !important;
+  padding-bottom: 0 !important;
+  border-bottom: none !important;
 }
 
-/* --- SECTION HEADINGS (h2) - Small caps style --- */
+/* --- SECTION HEADINGS (h2) --- */
 .md-content h2 {
-  font-size: 0.75rem !important;
-  font-weight: 700 !important;
+  font-size: 0.65rem !important;
+  font-weight: 600 !important;
   text-transform: uppercase !important;
-  letter-spacing: 0.15em !important;
-  color: var(--blog-primary, #4051b5) !important;
-  margin-top: 2rem !important;
-  margin-bottom: 1.5rem !important;
-  padding-bottom: 0.5rem !important;
-  border-bottom: 2px solid var(--blog-primary, #4051b5) !important;
+  letter-spacing: 0.18em !important;
+  color: var(--blog-text-tertiary, #999) !important;
+  margin-top: 0 !important;
+  margin-bottom: 1.8rem !important;
+  padding-bottom: 0.8rem !important;
+  border-bottom: 1px solid var(--blog-border, #eaeaea) !important;
 }
 
 /* --- BLOG POST TITLES (h3) --- */
 .md-content h3 {
-  font-size: 1.1rem !important;
-  font-weight: 700 !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
   margin-top: 0 !important;
-  margin-bottom: 0.3rem !important;
-  line-height: 1.4 !important;
-  padding-top: 0.5rem !important;
+  margin-bottom: 0.15rem !important;
+  line-height: 1.5 !important;
 }
 
 .md-content h3 a {
-  color: var(--blog-text-primary, #212121) !important;
+  color: var(--blog-text-primary, #1a1a1a) !important;
   text-decoration: none !important;
-  transition: color 0.2s ease !important;
+  transition: color 0.15s ease !important;
 }
 
 .md-content h3 a:hover {
   color: var(--blog-primary, #4051b5) !important;
 }
 
-/* Date/tags line */
+/* Date/tags */
 .md-content h3 + p {
-  font-size: 0.7rem !important;
-  color: var(--blog-text-tertiary, #999) !important;
-  letter-spacing: 0.03em !important;
-  margin-bottom: 0.6rem !important;
+  font-size: 0.65rem !important;
+  color: var(--blog-text-tertiary, #aaa) !important;
+  letter-spacing: 0.04em !important;
+  margin-bottom: 0.5rem !important;
 }
 
-/* Post excerpts - subtle left border */
+/* Post excerpts */
 .md-content h3 + p + p {
-  padding-left: 1rem !important;
-  border-left: 2px solid var(--blog-border, #e0e0e0) !important;
-  color: var(--blog-text-secondary, #666) !important;
-  font-size: 0.82rem !important;
-  line-height: 1.7 !important;
+  color: var(--blog-text-secondary, #555) !important;
+  font-size: 0.8rem !important;
+  line-height: 1.8 !important;
+  margin-bottom: 0.4rem !important;
 }
 
-/* --- SEPARATORS - Clean thin lines, no symbol --- */
+/* Read more links */
+.md-content a[href*="/writing/"]:not(h3 a) {
+  font-size: 0.65rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+  font-weight: 600 !important;
+  color: var(--blog-primary, #4051b5) !important;
+  opacity: 0.7 !important;
+  transition: opacity 0.2s ease !important;
+}
+
+.md-content a[href*="/writing/"]:not(h3 a):hover {
+  opacity: 1 !important;
+}
+
+/* --- SEPARATORS - Thin clean lines --- */
 .md-typeset hr {
   border: none !important;
   height: 1px !important;
-  background: var(--blog-border, #e0e0e0) !important;
-  margin: 2.5rem 0 !important;
+  background: var(--blog-border, #eaeaea) !important;
+  margin: 2rem 0 !important;
 }
 
 .md-typeset hr::after {
   display: none !important;
 }
 
-/* Hide permalink symbols */
 .md-typeset .headerlink {
   display: none !important;
 }
 
-/* --- READ MORE links --- */
-.md-content a[href*="/writing/"]:not(h3 a) {
-  font-size: 0.72rem !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.08em !important;
-  font-weight: 700 !important;
-}
-
 /* --- CONTENT AREA --- */
 .md-content__inner {
-  padding-top: 2.5rem !important;
+  padding-top: 3rem !important;
 }
 
-/* Fade edit/view icons until hover */
 .md-content__button {
-  opacity: 0.3 !important;
+  opacity: 0 !important;
   transition: opacity 0.2s ease !important;
+}
+
+.md-content:hover .md-content__button {
+  opacity: 0.3 !important;
 }
 
 .md-content__button:hover {
   opacity: 1 !important;
 }
 
-/* --- RIGHT SIDEBAR border --- */
-.md-sidebar--secondary {
-  border-left: 1px solid var(--blog-border, #e0e0e0) !important;
-  padding-left: 0.75rem !important;
+/* --- TOC SIDEBAR - Clean label --- */
+.md-nav--secondary > .md-nav__title {
+  font-size: 0.6rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.18em !important;
+  color: var(--blog-text-tertiary, #999) !important;
+  padding-bottom: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+  border-bottom: 1px solid var(--blog-border, #eaeaea) !important;
 }
 
-/* --- SEARCH refinement --- */
+/* --- SEARCH --- */
 .md-search__input {
-  border-radius: 4px !important;
-  font-size: 0.8rem !important;
+  border-radius: 2px !important;
+  font-size: 0.75rem !important;
+  background: rgba(255,255,255,0.08) !important;
 }
 
-/* --- FOOTER --- */
-.md-footer {
-  background: #1a1a2e !important;
-  border-top: 1px solid rgba(255,255,255,0.05) !important;
-}
-
-.md-copyright {
-  font-size: 0.65rem !important;
-  letter-spacing: 0.05em !important;
-  opacity: 0.6 !important;
-}
-
-/* --- LEFT SIDEBAR nav links --- */
+/* --- LEFT SIDEBAR --- */
 .md-sidebar--primary .md-nav__link {
   font-size: 0.72rem !important;
   letter-spacing: 0.03em !important;
 }
 
+/* --- FOOTER --- */
+.md-footer {
+  background: #1e1e2e !important;
+  border-top: none !important;
+}
+
+.md-copyright {
+  font-size: 0.6rem !important;
+  letter-spacing: 0.08em !important;
+  opacity: 0.4 !important;
+  text-transform: uppercase !important;
+}
+
 /* --- GLOBAL LINK STYLING --- */
 .md-typeset a:not(.md-nav__link):not(.md-header__button):not(.md-tabs__link):not(.md-footer__link):not(.md-source) {
   text-decoration: none !important;
-  border-bottom: 1px solid transparent !important;
-  transition: border-color 0.2s ease !important;
-}
-
-.md-typeset a:not(.md-nav__link):not(.md-header__button):not(.md-tabs__link):not(.md-footer__link):not(.md-source):hover {
-  border-bottom-color: var(--blog-primary, #4051b5) !important;
+  transition: color 0.15s ease !important;
 }
 
 /* --- DARK MODE --- */
-[data-md-color-scheme="slate"] .md-header {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%) !important;
-}
-
+[data-md-color-scheme="slate"] .md-header,
 [data-md-color-scheme="slate"] .md-tabs {
-  background: rgba(26, 26, 46, 0.95) !important;
+  background: #151520 !important;
 }
 
 [data-md-color-scheme="slate"] .md-footer {
-  background: #0d0d1a !important;
-}
-
-[data-md-color-scheme="slate"] .md-sidebar--secondary {
-  border-left-color: rgba(255,255,255,0.08) !important;
+  background: #0a0a12 !important;
 }
 
 [data-md-color-scheme="slate"] .md-typeset hr {
-  background: rgba(255,255,255,0.08) !important;
+  background: rgba(255,255,255,0.06) !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav--secondary > .md-nav__title {
+  border-bottom-color: rgba(255,255,255,0.08) !important;
+}
+
+[data-md-color-scheme="slate"] .md-content h2 {
+  border-bottom-color: rgba(255,255,255,0.08) !important;
 }
