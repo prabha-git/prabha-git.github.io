@@ -116,9 +116,13 @@ def generate_index():
     recent_posts = posts[:5]
 
     # Generate index.md content
-    index_content = """# Prabha Arivalagan
+    index_content = """![Prabha Arivalagan](https://avatars.githubusercontent.com/u/3776681){ .homepage-avatar }
+
+# Prabha Arivalagan
 
 AI Engineer writing about agents, LLMs, and cloud infrastructure
+
+[GitHub](https://github.com/prabha-git) · [Twitter](https://twitter.com/prabhatweet) · [Medium](https://medium.com/@prabhakaran_arivalagan){ .homepage-social }
 
 ## Recent Writing
 
