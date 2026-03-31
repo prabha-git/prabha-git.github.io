@@ -908,7 +908,9 @@ button:focus-visible {
 }
 
 /* Social links paragraph */
-.homepage-social {
+/* Style ALL social links in the paragraph containing .homepage-social */
+p:has(.homepage-social),
+p:has(.homepage-social) a {
   font-size: 0.65rem !important;
   text-transform: uppercase !important;
   letter-spacing: 0.1em !important;
@@ -917,9 +919,11 @@ button:focus-visible {
   opacity: 0.6 !important;
   transition: opacity 0.2s ease !important;
   border: none !important;
+  text-decoration: none !important;
 }
 
-.homepage-social:hover {
+p:has(.homepage-social):hover,
+p:has(.homepage-social):hover a {
   opacity: 1 !important;
 }
 
