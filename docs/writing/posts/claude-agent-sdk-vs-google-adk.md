@@ -14,10 +14,12 @@ authors:
 
 Despite similar names, Anthropic’s Claude Agent SDK and Google’s Agent Development Kit (ADK) are fundamentally different tools addressing distinct problems.
 
-They aren't just two flavors of the same thing. They represent fundamentally different ways to solve the problem.
+They aren’t just two flavors of the same thing. They represent fundamentally different ways to solve the problem.
 
 *   **Claude Agent SDK** is a local runtime for autonomous execution. Think "Super-Intern" on your laptop.
 *   **Google ADK** is a framework for AI system orchestration.
+
+<!-- more -->
 
 ---
 

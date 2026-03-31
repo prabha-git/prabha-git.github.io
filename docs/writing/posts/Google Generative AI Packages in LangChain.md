@@ -9,6 +9,8 @@ authors:
 ---
 # langchain-google-genai vs langchain-google-vertexai: What to Choose?
 
+<!-- more -->
+
 ## Key Differences
 
 | Feature        | langchain-google-genai                          | langchain-google-vertexai                                             |

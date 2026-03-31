@@ -13,6 +13,8 @@ authors:
 
 Large Language Models (LLMs) are known for their vast number of parameters, often reaching billions. For example, open-source models like Llama2 come in sizes of 7B, 13B, and 70B parameters, while Google's Gemma has 2B parameters. Although OpenAI's GPT-4 architecture is not publicly shared, it is speculated to have more than a trillion parameters, with 8 models working together in a mixture of experts approach.
 
+<!-- more -->
+
 ## Understanding Parameters
 
 A parameter is a model weight learned during the training phase. The number of parameters can be a rough indicator of a model's capability and complexity. These parameters are used in huge matrix multiplications across each layer until an output is produced.

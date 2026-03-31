@@ -12,6 +12,8 @@ authors:
 
 As an avid Obsidian user, I've always been fascinated by the potential of leveraging my daily notes as a personal knowledge base. Obsidian has become my go-to tool for taking notes, thanks to its simplicity and the wide range of customization options available through community plugins. With the notes and calendar plugins enabled, I can easily capture my daily thoughts and keep track of the projects I'm working on. But what if I could take this a step further and use these notes as the foundation for a powerful chatbot?
 
+<!-- more -->
+
 Imagine having a personal assistant that could answer questions like:
 
 1. "What was that fascinating blog post I read last week?"

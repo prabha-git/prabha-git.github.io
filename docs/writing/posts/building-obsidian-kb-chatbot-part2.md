@@ -15,6 +15,8 @@ authors:
 
 In our [previous post](https://medium.com/@prabhakaran_arivalagan/building-personal-chatbot-with-langchain-ragas-a-journey-of-iteration-and-learning-acbae799124e), we explored building a chatbot for Obsidian notes using Langchain and basic Retrieval-Augmented Generation (RAG) techniques. Today, I am sharing the significant improvements I've made to enhance the chatbot's performance and functionality. These advancements have transformed our chatbot into a more effective and trustworthy tool for navigating my Obsidian knowledge base.
 
+<!-- more -->
+
 ## System Architecture: The Blueprint of Our Enhanced Chatbot
 
 Let's start by looking at our updated system architecture:

@@ -12,7 +12,9 @@ authors:
 
 Very good resource [Karpathy's Tokenizer Video](https://www.youtube.com/watch?v=zduSFxRajkE&t=3618s)
 
-It is always clear that LLMs use different tokenizer , i want to test it. 
+It is always clear that LLMs use different tokenizer , i want to test it.
+
+<!-- more --> 
 
 I have downloaded from [gutenberg.org/cache/epub/100/pg100.txt](https://www.gutenberg.org/cache/epub/100/pg100.txt)
 

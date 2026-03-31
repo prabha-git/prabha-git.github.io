@@ -8,7 +8,7 @@ authors:
   - Prabha
 ---
 
-
+<!-- more -->
 
 
 | GPU             | Cost | Speed (General Performance)            | Memory        | Energy Consumption | Training Suitability | Inference Suitability | Other Factors                                                                    |

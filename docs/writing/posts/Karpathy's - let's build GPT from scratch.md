@@ -14,6 +14,7 @@ authors:
 !!!note "Learning Resource"
 	Karpathy's tutorial on Youtube [Lets build GPT from scratch](https://www.youtube.com/watch?v=kCc8FmEb1nY&t=2794s)
 
+<!-- more -->
 
 ## [The spelled-out intro to neural networks and backpropagation: building micrograd - YouTube](https://www.youtube.com/watch?v=VMj-3S1tku0&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=1)
 

@@ -3,7 +3,7 @@ draft: false
 date: 2025-12-05
 slug: evolution-ai-coding
 tags:
-  - coding-assistent
+  - coding-assistant
 authors:
   - Prabha
 ---
@@ -13,6 +13,8 @@ authors:
 *Last Updated: December 2025*
 
 The developer's relationship with code is fundamentally changing. As AI becomes more capable, the developer's role transforms with it. This isn't about better tools; it's about a shift in what developers actually *do*.
+
+<!-- more -->
 
 ![The evolution of AI-assisted development: from crawl to fly](img/ai-evolution-crawl-walk-run-fly.png)
 

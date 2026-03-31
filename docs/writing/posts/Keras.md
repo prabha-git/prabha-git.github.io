@@ -9,6 +9,8 @@ authors:
 ---
 - Keras is a high-level framework for deep learning.
 - Keras 3 workflows support three backends:
+
+<!-- more -->
 	- TensorFlow
 	- JAX
 	- PyTorch

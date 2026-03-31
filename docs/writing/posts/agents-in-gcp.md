@@ -16,9 +16,12 @@ authors:
 - **ADK** → Google-developed open-source framework for building complex multi-agent systems with maximum control and modularity
 - **Conversational Agents (Dialogflow CX)** → Omnichannel customer conversations with structured flows and open-ended playbooks
 - **Open-Source Frameworks** → Leverage specific framework capabilities (LangChain's integrations, LangGraph's state management, CrewAI's collaboration) on GCP's managed infrastructure
-- **Agentspace** → Enterprise search platform and self-serve agent creation for automating everyday knowledge work tasks 
+- **Agentspace** → Enterprise search platform and self-serve agent creation for automating everyday knowledge work tasks
 
 **Key decision point:** Choose your building framework (ADK/Conversational Agents/Open-Source), then optionally deploy to Agentspace for enterprise wide access.
+
+<!-- more -->
+
 ---
 
 Building AI agents in Google Cloud Platform presents four distinct paths, each optimized for different use cases. The challenge isn't finding options—it's choosing the right one.
