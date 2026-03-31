@@ -1,5 +1,15 @@
-# Prabha Arivalagan
-AI Engineer writing about agents, LLMs, and cloud infrastructure
+<div class="homepage-author" markdown>
+<img src="https://avatars.githubusercontent.com/u/3776681" alt="Prabha Arivalagan" class="homepage-avatar">
+<div class="homepage-author-info">
+<h1>Prabha Arivalagan</h1>
+<p>AI Engineer writing about agents, LLMs, and cloud infrastructure</p>
+<div class="homepage-social">
+<a href="https://github.com/prabha-git" title="GitHub">GitHub</a> &middot;
+<a href="https://twitter.com/prabhatweet" title="Twitter">Twitter</a> &middot;
+<a href="https://medium.com/@prabhakaran_arivalagan" title="Medium">Medium</a>
+</div>
+</div>
+</div>
 
 ## Recent Writing
 
