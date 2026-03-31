@@ -1,18 +1,10 @@
-<div class="homepage-author" markdown>
-
 ![Prabha Arivalagan](https://avatars.githubusercontent.com/u/3776681){ .homepage-avatar }
-
-<div class="homepage-author-info" markdown>
 
 # Prabha Arivalagan
 
 AI Engineer writing about agents, LLMs, and cloud infrastructure
 
 [GitHub](https://github.com/prabha-git) · [Twitter](https://twitter.com/prabhatweet) · [Medium](https://medium.com/@prabhakaran_arivalagan){ .homepage-social }
-
-</div>
-
-</div>
 
 ## Recent Writing
 
