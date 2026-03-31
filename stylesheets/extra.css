@@ -936,3 +936,46 @@ p:has(.homepage-social):hover a {
 [data-md-color-scheme="slate"] .md-content img.homepage-avatar {
   border-color: rgba(255,255,255,0.1) !important;
 }
+
+
+/* =============================================
+   HOMEPAGE CTA BUTTON
+   ============================================= */
+
+.md-typeset .md-button {
+  display: inline-block !important;
+  padding: 0.75rem 2rem !important;
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  border-radius: 4px !important;
+  transition: all 0.2s ease !important;
+  cursor: pointer !important;
+  font-family: "Courier Prime", monospace !important;
+}
+
+.md-typeset .md-button--primary {
+  background: var(--blog-primary, #4051b5) !important;
+  color: #ffffff !important;
+  border: 2px solid var(--blog-primary, #4051b5) !important;
+}
+
+.md-typeset .md-button--primary:hover {
+  background: var(--blog-primary-hover, #303fa1) !important;
+  border-color: var(--blog-primary-hover, #303fa1) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: var(--blog-shadow-md) !important;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-button--primary {
+  background: var(--blog-primary, #5488e8) !important;
+  color: #ffffff !important;
+  border-color: var(--blog-primary, #5488e8) !important;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-button--primary:hover {
+  background: var(--blog-primary-hover, #7096ed) !important;
+  border-color: var(--blog-primary-hover, #7096ed) !important;
+}
