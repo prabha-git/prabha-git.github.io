@@ -1,10 +1,24 @@
-Daily\ Notes/
-scratch.md
-.cache
-.obsidian
-.idea
-Templates
-Daily Notes
-Projects
-Info/
+# === Allowlist .gitignore — PUBLIC blog repo (prabha-git.github.io) ===
+# Default: ignore everything (top-level files, dirs, and dotfiles).
+/*
+/.*
+
+# Re-include ONLY the blog + publishing set.
+!/docs/
+!/mkdocs.yml
+!/generate_index.py
+!/requirements-doc.txt
+!/assets/
+!/img/
+!/CNAME
+!/LICENSE
+!/CLAUDE.md
+!/ellipsis.yaml
+!/create_minimal_oas.py
+!/.github/
+!/.gitignore
+
+# Re-deny private/junk even inside allowed dirs.
 docs/writing/notes/
+Users/
+**/.DS_Store
